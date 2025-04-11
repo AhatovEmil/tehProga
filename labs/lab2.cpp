@@ -83,14 +83,6 @@ public:
         return result;
     }
 
-    double length() const {
-        double sum = 0;
-        for (int i = 0; i < dim; i++) {
-            sum += b[i] * b[i];
-        }
-        return sqrt(sum);
-    }
-
     void print() const {
         cout << "Вектор " << num << ": ";
         for (int i = 0; i < dim; i++) {
@@ -266,8 +258,6 @@ int main() {
 
     vecSum = vec2;
     vecSum.print();
-
-    cout << "Длина vec1: " << vec1.length() << endl;
 
     matr mat1(3, 4), mat2(3, 4);
     mat1.print();
